@@ -2,6 +2,7 @@
 <html>
 
  <head>
+ <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
  <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +21,7 @@
 	<!--<link rel = "icon" type = "image/png" href = "images/iem.png">   background: linear-gradient(90deg, rgba(177, 64, 200, 1) 0%, rgba(109, 9, 121, 1) 35%, rgba(45, 1, 62, 1) 100%;   background-color : #fff;-->
     <style>
     h1 { padding : 0; margin : 0; }
-    body { padding : 20px 0; font-family : Helvetica; font-size : 20px; background-color:#FFFFFF; <!--background-image : url("images/bg2.png");--> } 
+    body { padding : 20px 0; font-family : Helvetica; font-size : 20px; background-color:#FFFFFF; /*<!--background-image : url("images/bg2.png");-->*/ } 
     #container { width : 1000px; margin : 0 auto;  background-color : #fff;  padding : 50px;  text-align: left; box-shadow: 0px 0px 10px #FFFFFF;; }	
     #me { margin-left : 25px; border : 0 solid black; float : right; margin-bottom : 0; margin-right:25px;}
     #content { display : block; margin-right : 0px;}
@@ -39,6 +40,9 @@
     #simpsons { margin : 5px auto; text-align : center; color : #FFFFFF; }
     </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+<!-- <link rel="stylesheet" href="/path/to/folder/css/academicons.min.css"/> -->
 	<style>
 body {margin:0;height:2000px;}
 
@@ -63,30 +67,13 @@ body {margin:0;height:2000px;}
   background-color: #000;
 }
 
-.facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.google {
-  background: #dd4b39;
-  color: white;
-}
-
-.linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.youtube {
-  background: #bb0000;
-  color: white;
-}
+/* 
+.facebook { background: #3B5998; color: white;}
+.twitter { background: #55ACEE;  color: white;}
+.google { background: #dd4b39; color: white;}
+.linkedin { background: #007bb5; color: white;}
+.youtube { background: #bb0000; color: white;
+} */
 
 .content {
   margin-left: 75px;
@@ -94,9 +81,9 @@ body {margin:0;height:2000px;}
 }
 
 .glow {
-  font-size: 20px;
-  color: #f00;
-  <!--text-align: center;-->
+  font-size: 15px;
+  color: rgb(182, 65, 65);
+  /* text-align: center; */
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
@@ -107,6 +94,17 @@ body {margin:0;height:2000px;}
   to   {text-shadow: 0 0 20px #fff, 0 0 22px #ff4da6, 0 0 24px #ff4da6, 0 0 26px #ff4da6, 0 0 28px #ff4da6, 0 0 30px #ff4da6, 0 0 32px #ff4da6;} 
 }
 
+ /* Font details */
+  .ai-orcid-square{background: white; color: rgb(143, 212, 39); }
+  .fa-linkedin-square{background: white; color: #007bb5; }
+  .fa-graduation-cap{background: white; color: grey; }
+  .fa-github-square {background: white; color: black; }
+  .fa-envelope { background: white; color: black; }
+  .fa-phone-square { background: white; color: green;}
+  .iconify { color: rgb(192, 192, 41); }
+  .fa:hover { opacity: 0.7; text-decoration: none;}
+  .ai:hover { opacity: 0.7; text-decoration: none;}
+  
 </style>
 
 
@@ -134,18 +132,26 @@ body {margin:0;height:2000px;}
 	  <tr><td><td><td><td><td><td valign="top" colspan="2"><span class="h1"><h1>Aneeshan Sain</h1></b></span><br>
 	
 	  PhD Student<br>
-	  <a href="http://sketchx.eecs.qmul.ac.uk/ style = "font-size: 20px"><b> SketchX Lab, CVSSP, University of Surrey </b> </a>
-	  <br>Email: saneeshan95@gmail.com, Mobile: +44-7425191723<br>
+	  <a href="http://sketchx.ai/" style = "font-size: 20px"> SketchX Lab, CVSSP, University of Surrey </a>
+	  <br><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> <span style="font-size:18px">saneeshan95@gmail.com</span>
+    <br><i class="fa fa-envelope fa-1x" aria-hidden="true" style="color:rgba(134, 19, 19, 0.747);"></i> <span style="font-size:18px">a.sain@surrey.ac.uk</span>
+    <!-- <a href = "mailto: abc@example.com">Send Email</a> -->
+    <!-- <br><i class="fa fa-phone-square fa-1x" aria-hidden="true"></i> +44-7425191723 -->
+	  
 	  <p> </p>
 	  <!-- <a href="Resume/Current_CV.pdf" style="color: #8D8988"><b>Resume</b> </a> &bull; -->
-	  <a href="https://scholar.google.com/citations?user=_QWFBvoAAAAJ&hl=en" > <i>Google Scholar </i> </a> &bull;
-	  <a href="https://github.com/aneeshan95" 				 > <i>Github	     </i> </a> &bull;
-	  <a href="https://in.linkedin.com/in/aneeshan-sain-1046a6bb" 		 > <i>Linkedin	     </i> </a> &bull;
-	  <a href="https://dblp.org/pid/203/8684.html" 				 > <i>DBLP	     </i> </a> &bull;
-	  <a href="https://orcid.org/0000-0001-7789-3060" 			 > <i>ORCID	     </i> </a> &bull;
+	  
+	  <i href="https://scholar.google.com/citations?user=_QWFBvoAAAAJ&hl=en" class="fa fa-graduation-cap fa-2x" aria-hidden="true"></i> &bull;
+	  <i href="https://github.com/aneeshan95" class="fa fa-github-square fa-2x" aria-hidden="true"></i> &bull;
+	  <i href="https://in.linkedin.com/in/aneeshan-sain-1046a6bb" target="_blank" class="fa fa-linkedin-square fa-2x"></i> &bull;
+    <i href="https://dblp.org/pid/203/8684.html" class="iconify" data-icon="simple-icons:dblp" data-width="40px" data-height="40px"></i> &bull;
+	  <i href="https://orcid.org/0000-0001-7789-3060" target="_blank" class="ai ai-orcid-square ai-2x"></i>
 	
 
-	  <p align="justify">My research is focused on Deep Learning and its applications in Computer Vision. My specific area of interest is deep learning-based visual understanding of sketches. I am currently working under the supervision of <a href="https://www.surrey.ac.uk/people/yi-zhe-song" >Dr. Yi-Zhe Song</a> Director, SketchX Lab, CVSSP, University of Surrey; co-supervised by <a href="https://www.surrey.ac.uk/people/tao-xiang">Prof. Tao Xiang</a> and <a href="https://www.surrey.ac.uk/people/yongxin-yang">Dr. Yongxin Yang</a>. </p>
+	  <p align="justify" style="font-size:18px"> 
+      My research is focused on Deep Learning and its applications in Computer Vision. My specific area of interest is deep learning-based visual understanding of sketches. I am currently working under the supervision of <a href="https://www.surrey.ac.uk/people/yi-zhe-song" >Dr. Yi-Zhe Song</a> Director, SketchX Lab, CVSSP, University of Surrey; co-supervised by <a href="https://www.surrey.ac.uk/people/tao-xiang">Prof. Tao Xiang</a>.
+      <!-- and <a href="https://www.surrey.ac.uk/people/yongxin-yang">Dr. Yongxin Yang</a>.  -->
+    </p>
 	</table>
 <p> Top-venue Conference publications (as of July 2021): <b>4 CVPR, 3 ICCV, 1 BMVC(Oral).</b> </p>
 
@@ -155,7 +161,7 @@ body {margin:0;height:2000px;}
   <td colspan = 7>
   <p>&nbsp;</p>
     <h3>Recent Activities</h3>
-    <li > <b>July 2021</b> : 3 papers accepted in <a href="http://iccv2021.thecvf.com/home"><i>ICCV 2021</i>  </a><font class=glow> !..NEW..! </font>  </li>
+    <li > <b>July 2021</b> : 3 papers accepted in <a href="http://iccv2021.thecvf.com/home"><i>ICCV 2021</i>  </a><sup><font class=glow>NEW</font></sup></li>
     <li > <b>June 2021</b> : Selected as reviewer for <a href="http://iccv2021.thecvf.com/"><i>ICCV 2021</i></a>  </li>
     <li > <b>Feb  2021</b> : 4 papers accepted in <a href="http://cvpr2021.thecvf.com/"><i>CVPR 2021</i></a>  </li>
 
