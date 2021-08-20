@@ -106,10 +106,10 @@
     }
 
     #Publications  {box-shadow: 0px 0px 2px #000; } 
-    .subTabContent {width : 850px; box-shadow: 0px 0px 10px #000;}
+    .subTabContent {width : 800px; box-shadow: 0px 0px 10px #000;}
 
     /* Style tab links */
-    .tablink-main {
+    .tabLink {
       outline: none;
       border: none;
       border-top-left-radius: 5mm;
@@ -124,27 +124,12 @@
       margin: 0 auto;
     }
 
-    .tablink-sub {
-      outline: none;
-      border: none;
-      border-top-left-radius: 5mm;
-      border-top-right-radius: 5mm;
-      /* background-color: #9AB95F;
-      color: #007bb5; */
-      background-color: grey;
-      color: white;
-      text-align: center;
-      cursor: pointer;
-      padding: 5px 10px;
-      font-size: 20px;
-      width: 100px;
-      margin: 0 auto;
-    }
-
-    .tablink-main:hover {opacity: 0.6; text-decoration: none;}
-    .tablink-sub:hover {opacity: 0.6; text-decoration: none;}
+    .subTabLink {background-color: grey; padding: 5px 10px; font-size: 20px; width: 100px;}
+    .tabLink:hover {opacity: 0.6; text-decoration: none;}
 
     /*
+    background-color: #9AB95F;
+    color: #007bb5;
     #Year_2021
     #Year_2020
     #Year_2019
@@ -179,7 +164,7 @@
           <td> </td>
           <td> </td>
           <td rowspan="4" colspan="0" halign="right" width=200px>
-            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=D_32EYBFDKkMEt6DcrQb-esnQrRzeGq3VGJwSp-hAxA"></script>
+            <!-- <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=D_32EYBFDKkMEt6DcrQb-esnQrRzeGq3VGJwSp-hAxA"></script> -->
           </td>
         </tr>
         <tr>
@@ -252,10 +237,10 @@
     </div>
 
     <!-----------------------------------------------------------------------------------Buttons-------------------------------------->
-    <button class="tablink-main" onclick="openPage('Publications', this, '#9AB95F', '#007bb5')" id="defaultOpenMain">Publications</button>
-    <button class="tablink-main" onclick="openPage('Experiences',  this, '#9AB95F', '#007bb5')">Experiences</button>
-    <!-- <button class="tablink-main" onclick="openPage('Contact', this, '#9AB95F', '#007bb5')">Contact</button> -->
-    <!-- <button class="tablink" onclick="openPage('About', this, 'orange')">About</button> -->  
+    <button class="tabLink" onclick="openPage('Publications', this, '#9AB95F', '#007bb5')" id="defaultOpenMain">Publications</button>
+    <button class="tabLink" onclick="openPage('Experiences',  this, '#9AB95F', '#007bb5')">Experiences</button>
+    <!-- <button class="tabLink" onclick="openPage('Contact', this, '#9AB95F', '#007bb5')">Contact</button> -->
+    <!-- <button class="tabLink" onclick="openPage('About', this, 'orange')">About</button> -->  
 
     <!-----------------------------------------------------------------------------------Research Experiences-------------------------------------->
     <div id="Experiences" class="tabContent">            
@@ -282,10 +267,10 @@
     <!--------------------------------------------------------------------------------------------Publications-------------------------------------->
     <div id="Publications" class="tabContent"><center>
       <!-----------------------------------------------------------------------------------Buttons-------------------------------------->
-      <button class="tablink-sub" onclick="openYearTab('Year_2021', this, '#9AB95F', '#007bb5')" id="Publications_defaultSub" ><b>2021</b></button>
-      <button class="tablink-sub" onclick="openYearTab('Year_2020', this, '#9AB95F', '#007bb5')"><b>2020</b></button>
-      <button class="tablink-sub" onclick="openYearTab('Year_2019', this, '#9AB95F', '#007bb5')"><b>2019</b></button>
-      <button class="tablink-sub" onclick="openYearTab('Year_2018', this, '#9AB95F', '#007bb5')"><b>2018</b></button>
+      <button class="tabLink subTabLink" onclick="openYearTab('Year_2021', this, '#9AB95F', '#007bb5')" id="Publications_defaultSub" ><b>2021</b></button>
+      <button class="tabLink subTabLink" onclick="openYearTab('Year_2020', this, '#9AB95F', '#007bb5')"><b>2020</b></button>
+      <button class="tabLink subTabLink" onclick="openYearTab('Year_2019', this, '#9AB95F', '#007bb5')"><b>2019</b></button>
+      <button class="tabLink subTabLink" onclick="openYearTab('Year_2018', this, '#9AB95F', '#007bb5')"><b>2018</b></button>
        
       <div id="Year_2021" class="tabContent subTabContent">
         <table border="0" cellpadding="10" cellspacing="1"  align="center" bgcolor="#FFFFFF">
@@ -538,15 +523,15 @@
 
   <script>
     function openYearTab(pageName,elmnt,color, fontcolor) {
-          var i, tabContent, tablinks;
+          var i, tabContent, tabLinks;
           tabContent = document.getElementsByClassName("tabContent subTabContent");
           for (i = 0; i < tabContent.length; i++) {
             tabContent[i].style.display = "none";
           }
-          tablinks = document.getElementsByClassName("tablink-sub");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-            tablinks[i].style.color = "";
+          tabLinks = document.getElementsByClassName("tabLink subTabLink");
+          for (i = 0; i < tabLinks.length; i++) {
+            tabLinks[i].style.backgroundColor = "";
+            tabLinks[i].style.color = "";
           }
           document.getElementById(pageName).style.display = "block";
           elmnt.style.backgroundColor = color;
@@ -554,15 +539,15 @@
         }
 
     function openPage(pageName,elmnt,color, fontcolor) {
-      var i, tabContent, tablinks;
+      var i, tabContent, tabLinks;
       tabContent = document.getElementsByClassName("tabContent");
       for (i = 0; i < tabContent.length; i++) {
         tabContent[i].style.display = "none";
       }
-      tablinks = document.getElementsByClassName("tablink-main");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-        tablinks[i].style.color = "";
+      tabLinks = document.getElementsByClassName("tabLink");
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].style.backgroundColor = "";
+        tabLinks[i].style.color = "";
       }
       document.getElementById(pageName).style.display = "block";
       elmnt.style.backgroundColor = color;
