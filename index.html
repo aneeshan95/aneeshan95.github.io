@@ -31,7 +31,7 @@
     a:link,a:visited { color: #1367a7; }    
 
     a.invisible { color : inherit; text-decoration : inherit; }
-    .publogo { margin-top : 20px; margin-right : 10px; float : left; border : 0; width: 200px; vertical-align: middle;}
+    .publogo { margin-top : 0px; margin-right : 10px; float : left; border : 0; width: 300px; vertical-align: middle;}
     
     .publication { clear : left; padding-bottom : 10px;}
     .codelogo { margin-right : 10px; float : left; border : 0;}
@@ -236,9 +236,9 @@
     <!-- <button class="tabLink" onclick="openPage('About', this, 'orange')">About</button> -->  
 
     <!-----------------------------------------------------------------------------------Research Experiences-------------------------------------->
-    <div id="Experiences" class="tabContent">        
+    <div id="Experiences" class="tabContent" style="font-family: Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans MT', 'Gill Sans';">        
 
-      <table border="0" cellpadding="0" cellspacing="4" style="font-family: Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans MT', 'Gill Sans';">
+      <table border="0" cellpadding="0" cellspacing="4">
         <tr>
           <td valign="top"><a href="https://www.surrey.ac.uk/people/aneeshan-sain" target="_blank"><img height=90 border=0 src="images/Surrey.png"></a> &nbsp;</td>
           <td>
@@ -277,7 +277,7 @@
     </div>
 
     <!--------------------------------------------------------------------------------------------Publications-------------------------------------->
-    <div id="Publications" class="tabContent"><center>
+    <div id="Publications" class="tabContent" style="font-family: Calibri, 'Trebuchet MS', sans-serif, 'Gill Sans MT', 'Gill Sans';"><center>
       <!-----------------------------------------------------------------------------------Buttons-------------------------------------->
       <button class="tabLink subTabLink" onclick="openYearTab('Year_2021', this, '#9AB95F', '#007bb5')" id="Publications_defaultSub" ><b>2021</b></button>
       <button class="tabLink subTabLink" onclick="openYearTab('Year_2020', this, '#9AB95F', '#007bb5')"><b>2020</b></button>
@@ -289,116 +289,104 @@
 
           <!-- TextisText -->
           <tr>              
-            <td style='width: 25%;'>
-              <img border=0 src="images/ICCV_2021/TextisText.PNG" classs="publogo" width="100%">
+            <td >
+              <img border=0 src="images/ICCV_2021/TextisText.PNG" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">Text is Text, No Matter What: Unifying Text Recognition using Knowledge Distillation</strong>
-                <br> Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Pinaki Nath Chowdhury, Yi-Zhe Song.
-                <br><b style="font-size: 18px;"><em> IEEE International Conference on Computer Vision (ICCV), </em> 2021.</b>
-                <br> <a href="https://arxiv.org/pdf/2107.12087.pdf">[Paper]</a>
-                <!-- <a href="https://www.youtube.com/watch?v=tYdy9frVRJI">[Talk]</a>
-                <a href="https://aneeshan95.github.io/StyleMeUp/">[More]</a>  -->
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">Text is Text, No Matter What: Unifying Text Recognition using Knowledge Distillation</b>
+              <br> Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Pinaki Nath Chowdhury, Yi-Zhe Song.
+              <br><b style="font-size: 18px;"><em> IEEE International Conference on Computer Vision (ICCV), </em> 2021.</b>
+              <br> <button><a href="https://arxiv.org/pdf/2107.12087.pdf">Paper</a></button>
+              <!-- <button><a href="https://www.youtube.com/watch?v=tYdy9frVRJI">Talk</a></button>
+              <button><a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>  -->
             </td>
           </tr>
 
           <!-- Towards the Unseen -->
           <tr>
                     
-            <td style='width: 25%;'>
-              <img border=0 src="images/ICCV_2021/Unseen.PNG" classs="publogo" width="100%">
+            <td >
+              <img border=0 src="images/ICCV_2021/Unseen.PNG" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">Towards the Unseen: Iterative Text Recognition by Distilling from Errors</strong>
-                <br> Ayan Kumar Bhunia, Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yi-Zhe Song.
-                <br><b style="font-size: 18px;"><em> IEEE International Conference on Computer Vision (ICCV), </em> 2021.</b>
-                <br> <a href="https://arxiv.org/abs/2107.12081.pdf">[Paper]</a>
-                <!-- <a href="https://www.youtube.com/watch?v=tYdy9frVRJI">[Talk]</a>
-                <a href="https://aneeshan95.github.io/StyleMeUp/">[More]</a>  -->
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">Towards the Unseen: Iterative Text Recognition by Distilling from Errors</b>
+              <br> Ayan Kumar Bhunia, Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yi-Zhe Song.
+              <br> <b style="font-size: 18px;"><em> IEEE International Conference on Computer Vision (ICCV), </em> 2021.</b>
+              <br> <button><a href="https://arxiv.org/abs/2107.12081.pdf">Paper</a></button>
+              <!-- <button><a href="https://www.youtube.com/watch?v=tYdy9frVRJI">Talk</a></button>
+              <button><a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>  -->
+
             </td>
           </tr>
 
           <!-- JVSR -->
           <tr>                
-            <td style='width: 25%;'>
-              <img border=0 src="images/ICCV_2021/JVSR.PNG" classs="publogo" width="100%">
+            <td >
+              <img border=0 src="images/ICCV_2021/JVSR.PNG" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">Joint Visual Semantic Reasoning: Multi-Stage Decoder for Text Recognition</strong>
-                <br> Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Amandeep Kumar, Shuvozit Ghose, Pinaki Nath Chowdhury, Yi-Zhe Song.
-                <br><b style="font-size: 18px;"><em> IEEE International Conference on Computer Vision (ICCV), </em> 2021.</b>
-                <br> <a href="https://arxiv.org/abs/2107.12090.pdf">[Paper]</a>
-                <!-- <a href="https://www.youtube.com/watch?v=tYdy9frVRJI">[Talk]</a>
-                <a href="https://aneeshan95.github.io/StyleMeUp/">[More]</a>  -->
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">Joint Visual Semantic Reasoning: Multi-Stage Decoder for Text Recognition</b>
+              <br> Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Amandeep Kumar, Shuvozit Ghose, Pinaki Nath Chowdhury, Yi-Zhe Song.
+              <br> <b style="font-size: 18px;"><em> IEEE International Conference on Computer Vision (ICCV), </em> 2021.</b>
+              <br> <button><a href="https://arxiv.org/abs/2107.12090.pdf">Paper</a></button>
+              <!-- <a href="https://www.youtube.com/watch?v=tYdy9frVRJI">Talk</a></button>
+              <a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>  -->
+
             </td>
           </tr>
             
           <!-- StyleMeUp -->
           <tr>                
-            <td style='width: 25%;'>
-              <img border=0 src="images/CVPR_2021/StyleMeUp.PNG" classs="publogo" width="100%">
+            <td >
+              <img border=0 src="images/CVPR_2021/StyleMeUp.PNG" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">StyleMeUp: Towards Style-Agnostic Sketch-Based Image Retrieval</strong>
-                <br> <b>Aneeshan Sain</b>, Ayan Kumar Bhunia, Yongxin Yang, Tao Xiang, Yi-Zhe Song.
-                <br><b style="font-size: 18px;"><em> IEEE Conference on Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
-                <br> <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Sain_StyleMeUp_Towards_Style-Agnostic_Sketch-Based_Image_Retrieval_CVPR_2021_paper.pdf">[Paper]</a>
-                <a href="https://www.youtube.com/watch?v=tYdy9frVRJI">[Talk]</a>
-                <a href="https://aneeshan95.github.io/StyleMeUp/">[More]</a>
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">StyleMeUp: Towards Style-Agnostic Sketch-Based Image Retrieval</b>
+              <br> <b>Aneeshan Sain</b>, Ayan Kumar Bhunia, Yongxin Yang, Tao Xiang, Yi-Zhe Song.
+              <br> <b style="font-size: 18px;"><em> IEEE Conference on Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
+              <br> <button><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Sain_StyleMeUp_Towards_Style-Agnostic_Sketch-Based_Image_Retrieval_CVPR_2021_paper.pdf">Paper</a></button>
+              <button><a href="https://www.youtube.com/watch?v=tYdy9frVRJI">Talk</a></button>
+              <button><a href="https://aneeshan95.github.io/StyleMeUp/">More</a></button>
             </td>
           </tr>
             
           <!-- PQA -->
           <tr>                
-            <td style='width: 25%;'>
-              <img border=0 src="images/CVPR_2021/PQA.PNG" classs="publogo" width="100%">
+            <td >
+              <img border=0 src="images/CVPR_2021/PQA.PNG" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">PQA: Perceptual Question Answering</strong>
-                <br> Yonggang Qi, Kai Zhang, <b>Aneeshan Sain</b>, Yi-Zhe Song.
-                <br><b style="font-size: 18px;"><em> IEEE Conference on Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
-                <br> <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Qi_PQA_Perceptual_Question_Answering_CVPR_2021_paper.pdf">[Paper]</a>
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">PQA: Perceptual Question Answering</b>
+              <br> Yonggang Qi, Kai Zhang, <b>Aneeshan Sain</b>, Yi-Zhe Song.
+              <br><b style="font-size: 18px;"><em> IEEE Conference on Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
+              <br> <button><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Qi_PQA_Perceptual_Question_Answering_CVPR_2021_paper.pdf">Paper</a></button>
             </td>
           </tr>
             
           <!-- Semi-supervised Sketch -->
           <tr>                
-            <td style='width: 25%;'>
-              <img border=0 src="images/CVPR_2021/Semi-sup.PNG" classs="publogo" width="100%">
+            <td >
+              <img border=0 src="images/CVPR_2021/Semi-sup.PNG" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">More Photos are All You Need: Semi-Supervised Learning for Fine-Grained Sketch Based Image Retrieval</strong>
-                <br> Ayan Kumar Bhunia, Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yongxin Yang, Tao Xiang, Yi-Zhe Song.
-                <br><b style="font-size: 18px;"><em> IEEE Conference on Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
-                <br>  <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Bhunia_More_Photos_Are_All_You_Need_Semi-Supervised_Learning_for_Fine-Grained_CVPR_2021_paper.pdf">[Paper]</a>
-                      <a href="https://github.com/AyanKumarBhunia/semisupervised-FGSBIR/">[Code]</a>
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">More Photos are All You Need: Semi-Supervised Learning for Fine-Grained Sketch Based Image Retrieval</b>
+              <br> Ayan Kumar Bhunia, Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yongxin Yang, Tao Xiang, Yi-Zhe Song.
+              <br><b style="font-size: 18px;"><em> IEEE Conference on Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
+              <br> <button><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Bhunia_More_Photos_Are_All_You_Need_Semi-Supervised_Learning_for_Fine-Grained_CVPR_2021_paper.pdf">Paper</a></button>
+              <button><a href="https://github.com/AyanKumarBhunia/semisupervised-FGSBIR/">Code</a></button>
             </td>
           </tr>
 
           <!-- MetaHTR -->
           <tr>    
-            <td style='width: 25%;'>
-              <img border=0 src="images/CVPR_2021/MetaHTR.PNG" classs="publogo" width="100%">
+            <td >
+              <img border=0 src="images/CVPR_2021/MetaHTR.PNG" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">MetaHTR: Towards Writer-Adaptive Handwritten Text Recognition</strong>
-                <br> Ayan Kumar Bhunia, Shuvozit Ghose, Amandeep Kumar, Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yi-Zhe Song.
-                <br><b style="font-size: 18px;"><em> IEEE Conference on Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
-                <br> <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Bhunia_MetaHTR_Towards_Writer-Adaptive_Handwritten_Text_Recognition_CVPR_2021_paper.pdf">[Paper]</a>
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">MetaHTR: Towards Writer-Adaptive Handwritten Text Recognition</b>
+              <br> Ayan Kumar Bhunia, Shuvozit Ghose, Amandeep Kumar, Pinaki Nath Chowdhury, <b>Aneeshan Sain</b>, Yi-Zhe Song.
+              <br><b style="font-size: 18px;"><em> IEEE Conference on Computer Vision and Pattern Recognition (CVPR), </em> 2021.</b>
+              <br> <button><a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Bhunia_MetaHTR_Towards_Writer-Adaptive_Handwritten_Text_Recognition_CVPR_2021_paper.pdf">Paper</a></button>
             </td>
           </tr>
         </table>
@@ -408,49 +396,43 @@
         <table border="0" cellpadding="10" cellspacing="1"  align="center" bgcolor="#FFFFFF">
           <!-- BMVC Hierarchy -->
           <tr>   
-            <td style='width: 25%;'>
-              <img border=0 src="images/bmvc.png" classs="publogo" width="100%">
+            <td >
+              <img border=0 src="images/bmvc.png" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">Cross-Modal Hierarchical Modelling for Fine-Grained Sketch Based Image Retrieval</strong>
-                <br> <b>Aneeshan Sain</b>, Ayan Kumar Bhunia,  Yongxin Yang, Tao Xiang, Yi-Zhe Song.
-                <br><b style="font-size: 18px;"><em> British Machine Vision Conference (BMVC), </em> 2020. <font color="green">[Oral]</font> </b>
-                <br> <a href="https://arxiv.org/abs/2007.15103">[Paper]</a> 
-                <a href="https://www.youtube.com/watch?v=hfnTbSY7QZo">[Talk]</a>
-                <a href="https://aneeshan95.github.io/Cross-modal_Hierarchy_FGSBIR/">[More]</a>
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">Cross-Modal Hierarchical Modelling for Fine-Grained Sketch Based Image Retrieval</b>
+              <br> <b>Aneeshan Sain</b>, Ayan Kumar Bhunia,  Yongxin Yang, Tao Xiang, Yi-Zhe Song.
+              <br><b style="font-size: 18px;"><em> British Machine Vision Conference (BMVC), </em> 2020. <font color="green">[Oral]</font> </b>
+              <br> <button><a href="https://arxiv.org/abs/2007.15103">Paper</a></button>
+              <button><a href="https://www.youtube.com/watch?v=hfnTbSY7QZo">Talk</a></button>
+              <button><a href="https://aneeshan95.github.io/Cross-modal_Hierarchy_FGSBIR/">More</a></button>
             </td>
           </tr>
           
           <!-- ICME S3Net-->
           <tr>
             <td>
-              <img border=0 src="images/icme.png" classs="publogo" width="100%">
+              <img border=0 src="images/icme.png" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">S3Net:Graph Representational Network For Sketch Recognition</strong>
-                <br> Lan Yang, <b>Aneeshan Sain</b>, Linpeng Li, Yonggang Qi, Honggang Zhang, Yi-Zhe Song.
-                <br><b style="font-size: 18px;"><em> International Conference on Multimedia & Expo (ICME )</em>, 2020. </b>
-                <br>  <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9102957">[Paper]</a>
-                      <a href="https://github.com/yanglan0225/s3net">[Code]</a>
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">S3Net:Graph Representational Network For Sketch Recognition</b>
+              <br> Lan Yang, <b>Aneeshan Sain</b>, Linpeng Li, Yonggang Qi, Honggang Zhang, Yi-Zhe Song.
+              <br><b style="font-size: 18px;"><em> International Conference on Multimedia & Expo (ICME )</em>, 2020. </b>
+              <br> <button><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9102957">Paper</a></button>
+              <button><a href="https://github.com/yanglan0225/s3net">Code</a></button>
             </td>
           </tr>
           
           <!-- Multi-media Tools Zone -->
           <tr>
               <td>
-                <img border=0 src="images/multi-tools.png" classs="publogo" width="100%">
+              <img border=0 src="images/multi-tools.png" class="publogo">
               </td>
-              <td>
-                <div class="publication">
-                  <p><strong  style="color:#65696C;">Zone-based keyword spotting in Bangla and Devanagari documents</strong>
-                  <br> Ayan Kumar Bhunia, Partha Pratim Roy, <b>Aneeshan Sain</b>, Umapada Pal.
-                  <br><b style="font-size: 18px;"><em> Multimedia Tools and Applications, Springer US</em>, 2020. </b>
-                  <br> <a href="https://link.springer.com/content/pdf/10.1007/s11042-019-08442-y.pdf">[Paper]</a>
-                </div>
+              <td class="publication">
+                <b style="color:#65696C;">Zone-based keyword spotting in Bangla and Devanagari documents</b>
+                <br> Ayan Kumar Bhunia, Partha Pratim Roy, <b>Aneeshan Sain</b>, Umapada Pal.
+                <br><b style="font-size: 18px;"><em> Multimedia Tools and Applications, Springer US</em>, 2020. </b>
+                <br> <button><a href="https://link.springer.com/content/pdf/10.1007/s11042-019-08442-y.pdf">Paper</a></button>  
               </td>
             </tr>
           </table>
@@ -462,30 +444,27 @@
           <!-- ICIP Document Binarization -->
           <tr>
             <td>
-              <img border=0 src="images/im2.png" classs="publogo" width="100%">
+              <img border=0 src="images/im2.png" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">Improving Document Binarization via Adversarial Noise-Texture Augmentation</strong>
-                <br> Ankan Kumar Bhunia, Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Partha Pratim Roy.
-                <br><b style="font-size: 18px;"><em>International Conference on Image Processing (ICIP), IEEE</em> 2019. </b>
-                <br> <a href="https://arxiv.org/abs/1810.11120">[Paper]</a> <a href="https://github.com/ankanbhunia/AdverseBiNet">[Code]</a>
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">Improving Document Binarization via Adversarial Noise-Texture Augmentation</b>
+              <br> Ankan Kumar Bhunia, Ayan Kumar Bhunia, <b>Aneeshan Sain</b>, Partha Pratim Roy.
+              <br> <b style="font-size: 18px;"><em>International Conference on Image Processing (ICIP), IEEE</em> 2019. </b>
+              <br> <button><a href="https://arxiv.org/abs/1810.11120">Paper</a></button> 
+              <button><a href="https://github.com/ankanbhunia/AdverseBiNet">Code</a></button>
             </td>
           </tr>
           
           <!-- CSVT Background Subtraction -->
           <tr>
             <td>
-              <img border=0 src="images/csvt.png" classs="publogo" width="100%">
+              <img border=0 src="images/csvt.png" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">Background Subtraction Based on Integration of Alternative Cues in Freely Moving Camera</strong>
-                <br> Chenqiu Zhao, <b>Aneeshan Sain</b>, Ying Qu, Yongxin Ge, Haibo Hu.
-                <br><b style="font-size: 18px;"><em>IEEE Transactions on Circuits and Systems for Video Technology (CSVT)</em>, 2019. <font color="blue">[I.F. : 3.599]</b></font>
-                <br><a href="https://ieeexplore.ieee.org/document/8408818">[Paper]</a>
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">Background Subtraction Based on Integration of Alternative Cues in Freely Moving Camera</b>
+              <br> Chenqiu Zhao, <b>Aneeshan Sain</b>, Ying Qu, Yongxin Ge, Haibo Hu.
+              <br><b style="font-size: 18px;"><em>IEEE Transactions on Circuits and Systems for Video Technology (CSVT)</em>, 2019. <font color="blue">[I.F. : 3.599]</b></font>
+              <br> <button><a href="https://ieeexplore.ieee.org/document/8408818">Paper</a></button>
             </td>
           </tr>
         </table>  
@@ -497,30 +476,27 @@
           <!-- Info Fusion Indic Handwritten-->
           <tr>
             <td>
-              <img border=0 src="images/indic.png" classs="publogo" width="100%">
+              <img border=0 src="images/indic.png" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;">Indic Handwritten Script Identification using Offline-Online Multimodal Deep Network</strong>
-                <br> Ayan Kumar Bhunia, Subham Mukherjee, <b>Aneeshan Sain</b>, Ankan Kumar Bhunia, Partha Pratim Roy, Umapada Pal.
-                <br><b style="font-size: 18px;"><em>Information Fusion, Elsevier</em>, 2018. <font color="blue">[I.F. : 10.716]</font></b>
-                <br> <a href="https://arxiv.org/abs/1802.08568">[Paper]</a>
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;">Indic Handwritten Script Identification using Offline-Online Multimodal Deep Network</b>
+              <br> Ayan Kumar Bhunia, Subham Mukherjee, <b>Aneeshan Sain</b>, Ankan Kumar Bhunia, Partha Pratim Roy, Umapada Pal.
+              <br><b style="font-size: 18px;"><em>Information Fusion, Elsevier</em>, 2018. <font color="blue">[I.F. : 10.716]</font></b>
+              <br> <button><a href="https://arxiv.org/abs/1802.08568">Paper</a></button>
             </td>
           </tr>
 
           <!-- Neurocomputing Multi-Oriented -->
           <tr>
             <td>
-              <img border=0 src="images/neuro.png" classs="publogo" width="100%">
+              <img border=0 src="images/neuro.png" class="publogo">
             </td>
-            <td>
-              <div class="publication">
-                <p><strong  style="color:#65696C;"> Multi-Oriented Text Detection and Verification in Video Frames and Scene Images</strong>
-                <br><b> Aneeshan Sain</b>, Ayan Kumar Bhunia, Partha Pratim Roy, Umapada Pal.
-                <br><b style="font-size: 18px;"><em>Neurocomputing, Elsevier</em>, 2018. <font color="blue">[I.F. : 3.317]</b></font>
-                <br><a href="https://www.sciencedirect.com/science/article/pii/S0925231217316181">[Paper]</a> 
-              </div>
+            <td class="publication">
+              <b style="color:#65696C;"> Multi-Oriented Text Detection and Verification in Video Frames and Scene Images</b>
+              <br><b> Aneeshan Sain</b>, Ayan Kumar Bhunia, Partha Pratim Roy, Umapada Pal.
+              <br><b style="font-size: 18px;"><em>Neurocomputing, Elsevier</em>, 2018. <font color="blue">[I.F. : 3.317]</b></font>
+              <br> <button><a href="https://www.sciencedirect.com/science/article/pii/S0925231217316181">Paper</a></button> 
+
             </td>
           </tr>
         </table>
